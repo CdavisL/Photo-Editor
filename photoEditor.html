@@ -1,0 +1,45 @@
+<!-- you can also use html:5 with emmet-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="photoEditor.css">
+
+    <title>Simple Photo Editor</title>
+
+</head>
+
+<body>
+
+    <div id="upload">
+        <!-- this will work without js, but not fully functional -->
+        <label for="uploader">Select File:</label>
+        <input type="file" id="uploader">
+    </div>
+
+    <div id="buttons">
+        <button>Greyscale</button>
+        <button>Sepia</button>
+        <button>Invert</button>
+        <button>RGB to RBG</button>
+        <button>RGB to BGR</button>
+        <button>RGB to GBR</button>
+        <button>RGB to GRB</button>
+        <button>Clear</button>
+    </div>
+
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <script src="photoEditor.js"></script>
+
+</body>
+
+</html>
